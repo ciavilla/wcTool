@@ -1,0 +1,26 @@
+This is a version of the Unix command line wc tool.
+
+Built using Node.js
+
+Number of bytes in a file
+option -C
+CLI Test node ccwc -c test.txt
+
+Number of lines in a file
+option -l
+CLI Test : node ccwc -l test.txt
+
+Number of words in a file
+option -W
+CLI Test: node ccwc -w test.txt
+
+Number of characters in a file or if the current locale doesnt support multibyte charcters this will match the -c option
+option -M
+CLI Test: node ccwc -m test.txt
+
+Default Option no options provided
+option -All options
+CLI Test: node ccwc test.txt
+
+Read from a standard input if no filename specified
+CLI Test: cat text.txt | ccwc -l
